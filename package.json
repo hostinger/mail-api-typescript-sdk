@@ -1,6 +1,6 @@
 {
   "name": "hostinger-mail-api-sdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hostinger API TypeScript SDK",
   "author": "Hostinger",
   "repository": {
