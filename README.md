@@ -1,9 +1,9 @@
-## hostinger-mail-api-sdk@1.8.0
+## hostinger-mail-api-sdk@1.9.0
 
 
 
 ### Usage
 
 ```
-npm install hostinger-mail-api-sdk@1.8.0 --save
+npm install hostinger-mail-api-sdk@1.9.0 --save
 ```
