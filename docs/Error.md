@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ModelError } from 'hostinger-mail-api-sdk';
+import { ModelError } from '@hostinger/mail-sdk';
 
 const instance: ModelError = {
     error,

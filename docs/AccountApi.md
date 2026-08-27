@@ -17,7 +17,7 @@ Returns the authenticated account and the mailboxes it can manage.
 import {
     AccountApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new AccountApi(configuration);

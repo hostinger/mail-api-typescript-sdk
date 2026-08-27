@@ -21,7 +21,7 @@ import {
     FoldersApi,
     Configuration,
     V1FoldersCreateRequest
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new FoldersApi(configuration);
@@ -81,7 +81,7 @@ Delete a folder and all of its subfolders.
 import {
     FoldersApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new FoldersApi(configuration);
@@ -142,7 +142,7 @@ Retrieve a paginated list of folders in the managed mailbox.
 import {
     FoldersApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new FoldersApi(configuration);
@@ -205,7 +205,7 @@ import {
     FoldersApi,
     Configuration,
     V1FoldersUpdateRequest
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new FoldersApi(configuration);

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { V1SendMessageRef } from 'hostinger-mail-api-sdk';
+import { V1SendMessageRef } from '@hostinger/mail-sdk';
 
 const instance: V1SendMessageRef = {
     uid,

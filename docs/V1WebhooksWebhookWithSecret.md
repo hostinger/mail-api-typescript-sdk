@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { V1WebhooksWebhookWithSecret } from 'hostinger-mail-api-sdk';
+import { V1WebhooksWebhookWithSecret } from '@hostinger/mail-sdk';
 
 const instance: V1WebhooksWebhookWithSecret = {
     id,

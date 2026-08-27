@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { V1FolderMessagesSearchRequest } from 'hostinger-mail-api-sdk';
+import { V1FolderMessagesSearchRequest } from '@hostinger/mail-sdk';
 
 const instance: V1FolderMessagesSearchRequest = {
     since,

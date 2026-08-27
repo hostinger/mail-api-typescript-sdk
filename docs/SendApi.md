@@ -18,7 +18,7 @@ import {
     SendApi,
     Configuration,
     V1SendRequest
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new SendApi(configuration);

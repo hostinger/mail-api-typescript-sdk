@@ -29,7 +29,7 @@ Permanently delete every message in a folder (empty the folder).
 import {
     MessagesApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new MessagesApi(configuration);
@@ -89,7 +89,7 @@ Permanently delete a single message.
 import {
     MessagesApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new MessagesApi(configuration);
@@ -152,7 +152,7 @@ import {
     MessagesApi,
     Configuration,
     V1FolderMessagesDeleteBulkRequest
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new MessagesApi(configuration);
@@ -214,7 +214,7 @@ Retrieve a single message by UID.
 import {
     MessagesApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new MessagesApi(configuration);
@@ -277,7 +277,7 @@ Download a message attachment as `application/octet-stream`.
 import {
     MessagesApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new MessagesApi(configuration);
@@ -343,7 +343,7 @@ Retrieve raw RFC822 source of a message as `message/rfc822` attachment.
 import {
     MessagesApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new MessagesApi(configuration);
@@ -406,7 +406,7 @@ Retrieve rendered text (plain + HTML) of a message. Marks message as `\\Seen`.
 import {
     MessagesApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new MessagesApi(configuration);
@@ -469,7 +469,7 @@ List messages in a folder. Use POST /search for filtering. Sort fields: uid, dat
 import {
     MessagesApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new MessagesApi(configuration);
@@ -538,7 +538,7 @@ import {
     MessagesApi,
     Configuration,
     V1FolderMessagesMoveRequest
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new MessagesApi(configuration);
@@ -604,7 +604,7 @@ import {
     MessagesApi,
     Configuration,
     V1FolderMessagesMoveBulkRequest
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new MessagesApi(configuration);
@@ -667,7 +667,7 @@ import {
     MessagesApi,
     Configuration,
     V1FolderMessagesFlagsRequest
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new MessagesApi(configuration);
@@ -734,7 +734,7 @@ import {
     MessagesApi,
     Configuration,
     V1FolderMessagesSearchRequest
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new MessagesApi(configuration);
@@ -806,7 +806,7 @@ import {
     MessagesApi,
     Configuration,
     V1FolderMessagesFlagsBulkRequest
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new MessagesApi(configuration);

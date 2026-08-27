@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { V1SendRequest } from 'hostinger-mail-api-sdk';
+import { V1SendRequest } from '@hostinger/mail-sdk';
 
 const instance: V1SendRequest = {
     to,

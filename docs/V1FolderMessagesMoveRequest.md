@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { V1FolderMessagesMoveRequest } from 'hostinger-mail-api-sdk';
+import { V1FolderMessagesMoveRequest } from '@hostinger/mail-sdk';
 
 const instance: V1FolderMessagesMoveRequest = {
     targetFolder,

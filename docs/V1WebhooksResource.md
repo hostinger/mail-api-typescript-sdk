@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { V1WebhooksResource } from 'hostinger-mail-api-sdk';
+import { V1WebhooksResource } from '@hostinger/mail-sdk';
 
 const instance: V1WebhooksResource = {
     data,

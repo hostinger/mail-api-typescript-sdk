@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { V1MeMailbox } from 'hostinger-mail-api-sdk';
+import { V1MeMailbox } from '@hostinger/mail-sdk';
 
 const instance: V1MeMailbox = {
     resourceId,

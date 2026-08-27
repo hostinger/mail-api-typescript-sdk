@@ -24,7 +24,7 @@ import {
     WebhooksApi,
     Configuration,
     V1WebhooksCreateRequest
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new WebhooksApi(configuration);
@@ -83,7 +83,7 @@ Delete a webhook.
 import {
     WebhooksApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new WebhooksApi(configuration);
@@ -142,7 +142,7 @@ Retrieve a single webhook by id.
 import {
     WebhooksApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new WebhooksApi(configuration);
@@ -201,7 +201,7 @@ List webhooks for a mailbox.
 import {
     WebhooksApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new WebhooksApi(configuration);
@@ -266,7 +266,7 @@ Regenerate the webhook secret. The previous secret is immediately invalidated. T
 import {
     WebhooksApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new WebhooksApi(configuration);
@@ -325,7 +325,7 @@ Send a test delivery to the webhook URL and return the upstream response.
 import {
     WebhooksApi,
     Configuration
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new WebhooksApi(configuration);
@@ -385,7 +385,7 @@ import {
     WebhooksApi,
     Configuration,
     V1WebhooksUpdateRequest
-} from 'hostinger-mail-api-sdk';
+} from '@hostinger/mail-sdk';
 
 const configuration = new Configuration();
 const apiInstance = new WebhooksApi(configuration);
