@@ -48,7 +48,7 @@ export class Configuration {
         this.baseOptions = {
             ...param.baseOptions,
             headers: {
-                'User-Agent': "hostinger-mail-typescript-sdk/1.19.3",
+                'User-Agent': "hostinger-mail-typescript-sdk/1.19.4",
                 ...param.baseOptions?.headers,
             },
         };
