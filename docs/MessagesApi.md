@@ -16,7 +16,7 @@ All URIs are relative to *https://api.mail.hostinger.com*
 |[**moveMessages**](#movemessages) | **POST** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/move | Move messages|
 |[**patchMessage**](#patchmessage) | **PATCH** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/{uid} | Update message flags|
 |[**searchMessages**](#searchmessages) | **POST** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/search | Search messages|
-|[**updateMessageFlags**](#updatemessageflags) | **POST** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/flags | Update message flags|
+|[**updateMessageFlags**](#updatemessageflags) | **POST** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/flags | Update flags on multiple messages|
 
 # **deleteAllMessages**
 > deleteAllMessages()

@@ -1,13 +1,13 @@
 # V1FeedbackSubmitRequest
 
-Feedback about the Mail API or the MCP server. The message is scrubbed of tokens, JWTs and key/secret/password values before validation and storage, so the length limit applies to the scrubbed text.
+Feedback the user wants to send to the Hostinger mail team. The message is scrubbed of tokens, JWTs and key/secret/password values before validation and storage, so the length limit applies to the scrubbed text.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**score** | **number** | How well the API served the task: 1 (poor) to 10 (excellent). | [default to undefined]
-**message** | **string** | What happened and what was expected, including the operation and status code involved. Never include tokens, passwords or email contents. | [default to undefined]
+**score** | **number** | The user\&#39;s rating of the Hostinger Email API: 1 (poor) to 10 (excellent). | [default to undefined]
+**message** | **string** | The user\&#39;s feedback in their own words. Never include tokens, passwords or email contents. | [default to undefined]
 
 ## Example
 
