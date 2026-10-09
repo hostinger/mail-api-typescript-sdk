@@ -741,9 +741,9 @@ const apiInstance = new MessagesApi(configuration);
 
 let mailboxResourceId: string; //Resource ID of the managed mailbox the bearer token is authorized for. (default to undefined)
 let folder: string; //Folder path (URL-encoded). (default to undefined)
-let page: number; // (optional) (default to 1)
-let perPage: number; // (optional) (default to 25)
-let sort: string; // (optional) (default to '-uid')
+let page: number; //Page number (1-based). (optional) (default to 1)
+let perPage: number; //Items per page (max 100). (optional) (default to 25)
+let sort: string; //Sort field with optional `-` prefix for descending. Allowed: uid, date, size. (optional) (default to '-uid')
 let v1FolderMessagesSearchRequest: V1FolderMessagesSearchRequest; // (optional)
 
 const { status, data } = await apiInstance.searchMessages(
@@ -763,9 +763,9 @@ const { status, data } = await apiInstance.searchMessages(
 | **v1FolderMessagesSearchRequest** | **V1FolderMessagesSearchRequest**|  | |
 | **mailboxResourceId** | [**string**] | Resource ID of the managed mailbox the bearer token is authorized for. | defaults to undefined|
 | **folder** | [**string**] | Folder path (URL-encoded). | defaults to undefined|
-| **page** | [**number**] |  | (optional) defaults to 1|
-| **perPage** | [**number**] |  | (optional) defaults to 25|
-| **sort** | [**string**] |  | (optional) defaults to '-uid'|
+| **page** | [**number**] | Page number (1-based). | (optional) defaults to 1|
+| **perPage** | [**number**] | Items per page (max 100). | (optional) defaults to 25|
+| **sort** | [**string**] | Sort field with optional &#x60;-&#x60; prefix for descending. Allowed: uid, date, size. | (optional) defaults to '-uid'|
 
 
 ### Return type

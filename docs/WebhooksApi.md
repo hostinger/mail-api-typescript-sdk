@@ -207,9 +207,9 @@ const configuration = new Configuration();
 const apiInstance = new WebhooksApi(configuration);
 
 let mailboxResourceId: string; //Resource ID of the managed mailbox the bearer token is authorized for. (default to undefined)
-let status: 'active' | 'paused' | 'disabled'; // (optional) (default to undefined)
-let page: number; // (optional) (default to 1)
-let perPage: number; // (optional) (default to 15)
+let status: 'active' | 'paused' | 'disabled'; //Return only webhooks with this status. (optional) (default to undefined)
+let page: number; //Page number (1-based). (optional) (default to 1)
+let perPage: number; //Items per page (max 1000). (optional) (default to 15)
 
 const { status, data } = await apiInstance.listWebhooks(
     mailboxResourceId,
@@ -224,9 +224,9 @@ const { status, data } = await apiInstance.listWebhooks(
 |Name | Type | Description  | Notes|
 |------------- | ------------- | ------------- | -------------|
 | **mailboxResourceId** | [**string**] | Resource ID of the managed mailbox the bearer token is authorized for. | defaults to undefined|
-| **status** | [**&#39;active&#39; | &#39;paused&#39; | &#39;disabled&#39;**]**Array<&#39;active&#39; &#124; &#39;paused&#39; &#124; &#39;disabled&#39;>** |  | (optional) defaults to undefined|
-| **page** | [**number**] |  | (optional) defaults to 1|
-| **perPage** | [**number**] |  | (optional) defaults to 15|
+| **status** | [**&#39;active&#39; | &#39;paused&#39; | &#39;disabled&#39;**]**Array<&#39;active&#39; &#124; &#39;paused&#39; &#124; &#39;disabled&#39;>** | Return only webhooks with this status. | (optional) defaults to undefined|
+| **page** | [**number**] | Page number (1-based). | (optional) defaults to 1|
+| **perPage** | [**number**] | Items per page (max 1000). | (optional) defaults to 15|
 
 
 ### Return type
