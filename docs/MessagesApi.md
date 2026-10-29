@@ -335,7 +335,7 @@ const { status, data } = await apiInstance.getMessageAttachment(
 # **getMessageSource**
 > File getMessageSource()
 
-Retrieve raw RFC822 source of a message as `message/rfc822` attachment.
+Retrieve raw RFC822 source of a message as `message/rfc822` attachment. Does not change the message `\\Seen` flag.
 
 ### Example
 
@@ -398,7 +398,7 @@ const { status, data } = await apiInstance.getMessageSource(
 # **getMessageText**
 > V1FolderMessagesMessageTextResource getMessageText()
 
-Retrieve rendered text (plain + HTML) of a message. Marks message as `\\Seen`.
+Retrieve rendered text (plain + HTML) of a message. Does not change the message `\\Seen` flag.
 
 ### Example
 
