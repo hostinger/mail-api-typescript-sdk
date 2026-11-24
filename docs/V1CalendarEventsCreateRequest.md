@@ -1,0 +1,43 @@
+# V1CalendarEventsCreateRequest
+
+Body for creating a calendar event.
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**title** | **string** | Title of the event. | [default to undefined]
+**start** | **string** | ISO 8601 date-time with offset; without an offset it is read as UTC. For an all-day event a date is enough (2026-09-28). | [default to undefined]
+**end** | **string** | Exclusive end, same format as &#x60;start&#x60;. Required for a timed event and not before &#x60;start&#x60;. For an all-day event the day after the last day (2026-09-29 for one day on 2026-09-28); omitted means one day. | [optional] [default to undefined]
+**allDay** | **boolean** | &#x60;true&#x60; for an all-day event (dates only, &#x60;timeZone&#x60; ignored), &#x60;false&#x60; for an event at a time of day. | [default to undefined]
+**timeZone** | **string** | IANA time zone of the event. Required when &#x60;allDay&#x60; is false, ignored when &#x60;allDay&#x60; is true. | [optional] [default to undefined]
+**description** | **string** | Notes of the event. Omitted or null for none. | [optional] [default to undefined]
+**location** | **string** | Place of the event. Omitted or null for none. | [optional] [default to undefined]
+**meetingLink** | **string** | http or https URL of the online meeting. Omitted or null for none. | [optional] [default to undefined]
+**color** | **string** | Color of the event as #RRGGBB or #RRGGBBAA. Omitted or null uses the calendar color. | [optional] [default to undefined]
+**recurrenceRule** | [**V1CalendarEventsRecurrenceRule**](V1CalendarEventsRecurrenceRule.md) | Omitted or null for a one-off event. A repeating event sends every field of the rule, null when unused: &#x60;frequency&#x60; DAILY, WEEKLY, MONTHLY or YEARLY, &#x60;interval&#x60; 1 to 1000, and &#x60;count&#x60; or &#x60;until&#x60; to end it, not both. | [optional] [default to undefined]
+**reminder** | [**V1CalendarEventsReminder**](V1CalendarEventsReminder.md) | Alarm before the start: &#x60;value&#x60; 0 to 1000 and &#x60;unit&#x60;. Omitted or null for none. | [optional] [default to undefined]
+**attendees** | [**Array&lt;V1CalendarEventsAttendeeInput&gt;**](V1CalendarEventsAttendeeInput.md) | People to invite; each receives an email invitation. Unique addresses, at most 100 not counting the mailbox itself, across all occurrences. The own address of the mailbox is stored as accepted and not invited. Omitted, null or empty for none. | [optional] [default to undefined]
+
+## Example
+
+```typescript
+import { V1CalendarEventsCreateRequest } from '@hostinger/mail-sdk';
+
+const instance: V1CalendarEventsCreateRequest = {
+    title,
+    start,
+    end,
+    allDay,
+    timeZone,
+    description,
+    location,
+    meetingLink,
+    color,
+    recurrenceRule,
+    reminder,
+    attendees,
+};
+```
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

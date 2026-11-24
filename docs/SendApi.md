@@ -9,7 +9,7 @@ All URIs are relative to *https://api.mail.hostinger.com*
 # **sendEmail**
 > sendEmail(v1SendRequest)
 
-Send a message from the managed mailbox. Saves a copy to INBOX.Sent.
+Send a message from the managed mailbox. The message is accepted for delivery and dispatched within a few seconds; a copy is saved to INBOX.Sent once it is sent. A delivery failure after acceptance is not reported on this call.
 
 ### Example
 
@@ -57,7 +57,7 @@ void (empty response body)
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-|**204** | Message sent and saved to sent folder. |  -  |
+|**204** | Message accepted for delivery. It is dispatched within a few seconds and then saved to the sent folder; a delivery failure is not reported on this call. |  -  |
 |**401** | Missing or invalid credentials. |  -  |
 |**403** | Token is not authorized to manage the requested mailbox. |  -  |
 |**422** | Request payload failed validation. &#x60;params&#x60; maps field name to an array of error messages. |  -  |

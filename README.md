@@ -1,9 +1,9 @@
-## @hostinger/mail-sdk@1.19.9
+## @hostinger/mail-sdk@1.20.0
 
 
 
 ### Usage
 
 ```
-npm install @hostinger/mail-sdk@1.19.9 --save
+npm install @hostinger/mail-sdk@1.20.0 --save
 ```
